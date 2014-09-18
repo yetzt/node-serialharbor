@@ -1,0 +1,28 @@
+{
+  "name": "serialharbor",
+  "version": "0.0.1",
+  "description": "plug & play for serialport",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yetzt/serialharbor.git"
+  },
+  "keywords": [
+    "serial",
+    "serialport"
+  ],
+  "author": "yetzt <node@yetzt.me>",
+  "licenses": [{
+    "type": "Public Domain",
+    "url": "http://unlicense.org/UNLICENSE"
+  }],
+  "bugs": {
+    "url": "https://github.com/yetzt/serialharbor/issues"
+  },
+  "homepage": "https://github.com/yetzt/serialharbor",
+  "dependencies": {
+    "dur": "0.0.2",
+    "serialport": "^1.4.6"
+  },
+  "readmeFilename": "readme.md"
+}
