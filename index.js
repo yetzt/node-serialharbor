@@ -51,7 +51,8 @@ serialharbor.prototype._refresh = function(){
 			if (port.vendorId === '' || port.productId === '' || port.locationId === '') return (++checked === ports.length) ? self._handle(devices) : self;
 			fs.stat(port.comName, function(err, stat){
 				if (err) return (++checked === ports.length) ? self._handle(devices) : self;
-				devices[self.hash([port.comName, port.vendorId, port.productId, port.locationId, stat.rdev, stat.ino].join("\t"))] = port;
+				port.uid = self.hash([port.comName, port.vendorId, port.productId, port.locationId, stat.rdev, stat.ino].join("\t"));
+				devices[port.uid] = port;
 				return (++checked === ports.length) ? self._handle(devices) : self;
 			});
 		});
