@@ -25,6 +25,12 @@ function serialharbor(duration){
 
 util.inherits(serialharbor, events.EventEmitter);
 
+// stop watching 
+serialharbor.prototype.stop = function(){
+	clearInterval(this.timer);
+	return this;
+};
+
 // djb2-based hashing function
 serialharbor.prototype.hash = function(str) {
 	var hash = 5381;
