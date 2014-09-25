@@ -1,6 +1,6 @@
 {
   "name": "serialharbor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "plug & play for serialport",
   "main": "index.js",
   "repository": {

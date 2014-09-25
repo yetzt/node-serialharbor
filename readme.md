@@ -24,6 +24,10 @@ ports.on("disconnect", function(port){
 	console.log("Disconnected", port);
 });
 
+// stop again
+ports.stop();
+
+
 ```
 
 ## Licence
